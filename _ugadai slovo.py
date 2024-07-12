@@ -9,8 +9,8 @@ def get_word(t):
 def play(word):
     print('Давайте играть. Загадано слово на русском языке, маленькими буквами.')
     print(display_hangman(6))
-    word_completion1 = '_' * len(word)  # строка, содержащая символы _ на каждую букву задуманного слова
-    word_completion = list(word_completion1)
+    word_completion = '_' * len(word)  # строка, содержащая символы _ на каждую букву задуманного слова
+    word_completion = list(word_completion)
     print('Загадано слово из', len(word), 'букв', ' '.join(word_completion))
     guessed = False                    # сигнальная метка
     guessed_letters = []               # список уже названных букв
